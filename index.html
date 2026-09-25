@@ -70,22 +70,22 @@
 
       <label for="name">
         ФИО:<br>
-        <input name="name" id="name" type="text" oninput="this.value = this.value.replace(/[^A-Za-zА-Яа-яЁё\s\-]/g, '')" placeholder="Введите ваше ФИО">
+        <input name="name" id="name" type="text" oninput="this.value = this.value.replace(/[^A-Za-zА-Яа-яЁё\s\-]/g, '')" placeholder="Введите ваше ФИО" required>
       </label><br>
 
       <label>
         Телефон:<br>
-        <input name="phone" type="tel" placeholder="Введите номер телефона">
+        <input name="phone" type="tel" placeholder="Введите номер телефона" required>
       </label><br>
 
       <label>
         E-mail:<br>
-        <input name="email" type="email" placeholder="Введите почту">
+        <input name="email" type="email" placeholder="Введите почту" required>
       </label><br>
 
       <label for="datePicker">
         Дата рождения:<br>
-        <input name="birthdate" id="datePicker" type="date">
+        <input name="birthdate" id="datePicker" type="date" required>
       </label><br>
 
       Пол:<br>
@@ -115,7 +115,7 @@
       </label><br>
 
       <label>
-        <input type="checkbox" name="contract_agreement">
+        <input type="checkbox" name="contract_agreement" required>
         С контрактом ознакомлен(-а)
       </label><br><br>
 
