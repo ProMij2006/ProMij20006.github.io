@@ -70,7 +70,7 @@
 
       <label>
         ФИО:<br>
-        <input name="fio" type="text" placeholder="Введите ваше ФИО">
+        <input name="fio" type="text" pattern="^[a-zA-Z]+$" pattern="^[а-яА-Я]+$" placeholder="Введите ваше ФИО">
       </label><br>
 
       <label>
@@ -85,7 +85,7 @@
 
       <label>
         Дата рождения:<br>
-        <input name="birthdate" type="date">
+        <input name="birthdate" id="reservationDate" max="2025-12-31" type="date">
       </label><br>
 
       Пол:<br>
