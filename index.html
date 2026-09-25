@@ -70,7 +70,7 @@
 
       <label for="name">
         ФИО:<br>
-        <input name="name" id="name" type="text"  pattern="[A-Za-zА-Яа-яЁё\s]+" placeholder="Введите ваше ФИО">
+        <input name="name" id="name" type="text" oninput="this.value = this.value.replace(/[^A-Za-zА-Яа-яЁё\s\-]/g, '')" placeholder="Введите ваше ФИО">
       </label><br>
 
       <label>
